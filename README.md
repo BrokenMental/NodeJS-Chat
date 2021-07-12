@@ -5,19 +5,50 @@
 
 # 실행 방법
 1. create-react-app ./
-2. npm install --save {list}
+2. (package.json에 명시 되어있지 않은 경우)
+3. npm install --save {install list}
 
-## install list
-#### cors
-#### nodemon
-#### express
-#### socket.io
-#### react-router
-#### react-router-dom
-#### socket.io-client
-#### react-scroll-to-bottom
-#### react-emoji
-#### query-string
+- install list
+### cors
+### nodemon
+### express
+### socket.io
+### react-router
+### react-router-dom
+### socket.io-client
+### react-scroll-to-bottom
+### react-emoji
+### query-string
+
+4. 각각 폴더 이동 후 실행
+    - server 폴더 이동
+    1. cd server
+    2. npm run start
+
+    - client 폴더 이동
+    1. cd ./client
+    2. npm run start
+
+2. (package.json에 명시 되어있는 경우)
+    - server 폴더 이동
+    1. cd server
+    2. npm install
+    3. npm run start
+
+    - client 폴더 이동
+    1. cd ./client
+    2. npm install
+    3. npm run start
+
+
+# 에러 날 경우
+1. 빌드 에러 시
+    - npm run build 실행 후 start 실행
+
+2. 실행 시 이미 포트가 사용중이라고 한다면
+    - 다른곳에 사용되는게 아닌 기존에 실행했던 server가 종료되지 않았다면 아래 명령어 실행 후 start
+    - npx kill-port {포트번호}
+
 
 ## 간략 설명
 1. server
