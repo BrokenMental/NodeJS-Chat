@@ -38,6 +38,7 @@ const Chat = ({ location }) => {
       socket.emit('disconnect');
       socket.off();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ENDPOINT, location.search]);
   
   useEffect(() => {
